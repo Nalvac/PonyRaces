@@ -1,5 +1,6 @@
 import {ApiService} from "./apiService";
 import {Injectable} from "@angular/core";
+import { RaceModel } from "../models/raceModel";
 
 @Injectable()
 export class RaceService {

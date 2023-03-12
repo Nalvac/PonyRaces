@@ -1,3 +1,5 @@
 <ns-ponies></ns-ponies>
-<h1>PonyRacer</h1>
-<p>{{ list() }}</p>
+<ul>
+    <!-- entry contains { key: number, value: PonyModel } -->
+    <li *ngFor="let entry of ponies | keyvalue: ponyComparator">{{ entry.key }} - {{ entry.value.name }}</li>
+  </ul>
